@@ -1,7 +1,9 @@
 # It requires `kube-ps1` plugin. Add it in your ~/.zshrc list
 
+local a_cool_symbol_instead_of_user_host='⠠⠵'
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 local user_host="%B%(!.%{$fg[red]%}.%{$fg[green]%})%n@%m%{$reset_color%} "
+local user_host="%B%(!.%{$fg[red]%}.%{$fg[green]%})${a_cool_symbol_instead_of_user_host}%{$reset_color%} "
 local user_symbol='%(!.#.$)'
 local current_dir="%B%{$fg[blue]%}%~ %{$reset_color%}"
 
